@@ -6,7 +6,7 @@ layout: default
 
 ### NodeJs_Coub_Downloader
 A downloader for videos posted on the Coub.com website.<br>
-project link: (https://github.com/damienakap/NodeJs_Coub_Downloader)
+project link: https://github.com/damienakap/NodeJs_Coub_Downloader
 
 
 
