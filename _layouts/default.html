@@ -24,13 +24,40 @@
         <div class="navbar-wrapper">
           <nav id="navbar">
             <ul>
-              <li><a href="" >Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="index.html" id="navbar_home" onclick="navigate()" >Home</a></li>
+              <li><a href="about.html" id="navbar_about" onclick="navigate()">About</a></li>
+              <li><a href="" id="navbar_contact" onclick="navigate()">Contact</a></li>
             </ul> 
           </nav>
         </div>
       </header>
+
+
+      <script>
+        let navbar_home = document.getElementById("navbar_home");
+        let navbar_about = document.getElementById("navbar_about");
+        let navbar_contact = document.getElementById("navbar_contact");
+
+        let path = window.location.pathname;
+        let page = path.split("/").pop();
+        console.log( page );
+
+        if(page=="index.html") navbar_home.classList.add("navbar_current");
+        if(page=="about.html") navbar_about.classList.add("navbar_current");
+  
+        function navigate( loc )
+        {
+          navbar_home.classList.remove("navbar_current");
+          navbar_about.classList.remove("navbar_current");
+          navbar_contact.classList.remove("navbar_current");
+          
+          if(loc==navbar_home) {navbar_home.classList.add("navbar_current");return;}
+          if(loc==navbar_about) {navbar_about.classList.add("navbar_current");return;}
+          if(loc==navbar_contact) {navbar_contact.classList.add("navbar_current");return;}
+  
+        }
+        
+      </script>
 
 
       <section>
