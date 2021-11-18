@@ -4,3 +4,8 @@ body {
   padding:0;
   width:100%;
 }
+
+footer {
+  display: grid;
+  justify-content: center;
+}
