@@ -8,26 +8,25 @@ author: Damien Apilando
     grid-template-columns: 60% auto;
     background-color: var(--theme_dark_1);
     margin-top: 1em;
+    height: 30em;
+    overflow:hidden;
   }
   .project_card_image {
     align-self: center;
     justify-self: center;
-    max-width: 100%;
-    max-height: 30em;
+    min-height: 20em;
+    min-width: 100%;
   }
   .project_card_wrapper {
-    width: 100%;
-    height: 30em;
+    max-width: 100%;
+    max-height: 30em;
     padding: 1em;
     background-color: var(--theme_primary_color);
   }
 
-  @media only screen and ( width < 768px) {
+  @media only screen and ( width < 1024px) {
     .project_card {
     grid-template-columns: 1fr;
-    }
-    .project_card_wrapper {
-      height:auto;
     }
   }
 </style>
