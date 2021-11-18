@@ -86,7 +86,12 @@ section {
 
 .sticky_nav {
   grid-column: 2 / span 10;
-  height: 2.5rem;
+  height: 2.3rem;
+}
+
+.navbar_current {
+  pointer-events: none;
+  color: var(--theme_accent_1);
 }
 
 nav {
