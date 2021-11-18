@@ -24,7 +24,7 @@
         <div class="navbar-wrapper">
           <nav id="navbar">
             <ul>
-              <li><a href="" id="navbar_home" onclick="navigate(this)" >Home</a></li>
+              <li><a href="index.html" id="navbar_home" onclick="navigate(this)" >Home</a></li>
               <li><a href="about.html" id="navbar_about" onclick="navigate(this)">About</a></li>
               <li><a href="contact.html" id="navbar_contact" onclick="navigate(this)">Contact</a></li>
             </ul> 
@@ -42,8 +42,9 @@
         let page = path.split("/").pop();
         console.log( page );
 
-        if(page=="") navbar_home.classList.add("navbar_current");
+        if(page==""||page=="index.html") navbar_home.classList.add("navbar_current");
         if(page=="about.html") navbar_about.classList.add("navbar_current");
+        if(page=="contact.html") navbar_contact.classList.add("navbar_current");
   
         function navigate( loc )
         {
