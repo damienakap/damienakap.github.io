@@ -18,11 +18,12 @@ nav {
 
 nav > ul {
   list-style-type:none;
-  
+  display: inline;
+
 }
 
 nav > li {
-  display: inline;
+  display: flex;
 }
 
 nav > ul > li > a {
