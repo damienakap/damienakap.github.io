@@ -2,13 +2,11 @@
 layout: default
 author: Damien Apilando
 ---
-<section>
-
 <style>
   .project_card {
     display: grid;
     grid-template-columns: 60% auto;
-    background-color: var(--theme_background_color);
+    background-color: var(--theme_dark_1);
     margin-top: 1em;
   }
   .project_card_image {
@@ -23,7 +21,7 @@ author: Damien Apilando
     padding: 1em;
     background-color: var(--theme_primary_color);
   }
-    
+
   @media only screen and ( width < 768px) {
     .project_card {
     grid-template-columns: 1fr;
@@ -49,5 +47,3 @@ author: Damien Apilando
     <p>Here is where the description of a project would go. It should only be a short summary, with a link to a dedicated project page.</p>
   </div>
 </div>
-  
-</section>

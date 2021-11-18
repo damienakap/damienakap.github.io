@@ -1,10 +1,9 @@
 
-
 :root {
   --theme_accent_1: rgb(152, 203, 250);
   --theme_accent_2: rgb(80, 219, 0);
 
-  --theme_primary_color: white;
+  --theme_primary_color: rgb(199, 209, 212);
 
   --theme_dark_1:rgb(33, 37, 41);
   --theme_dark_2:rgb(71, 78, 85);
@@ -20,8 +19,8 @@
 
 body {
   display: grid;
-  padding:0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   background-color: var(--theme_background_color);
   grid-template-columns: repeat(12, 1fr);
   font-family: Arial, Helvetica, sans-serif;
@@ -29,48 +28,50 @@ body {
 
 
 .wrapper {
+  display: grid;
   padding-left: 1em;
   padding-right: 1em;
-  background-color: var(--theme_accent_1);
   width: 100%;
   grid-column: 2 / span 10;
 }
 
 section {
-  width: 100%;
+  width: 90%;
   display: grid;
+  justify-content: center;
+  justify-self:center;
 }
+
+
 
 /***** NAME PLATE *****/
 
 .name_plate {
   padding-top: 1em;
   padding-bottom: 1em;
-  padding-left: 2em;
+  padding-left: 0em;
   width: 100%;
   min-height: 8rem;
   display: grid;
-  justify-content: left;
-  background-color: var(--theme_primary_color);
+  justify-content: center;
 }
 .name_plate > div > h3 {
   display:grid;
-  justify-content: left;
+  justify-content: inherit;
 }
 .name_plate > div > h1 {
   display:grid;
-  justify-content: left;
+  justify-content: inherit;
 }
 
 
 
-/***** NAVIGATOR BAR *****/
-
+/*****NAVIGATION BAR *****/
 
 nav {
   grid-column: 2 / span 10;
   width: 100%;
-  background-color: var(--theme_dark_2);
+  background-color: var(--theme_dark_1);
   display: grid;
   align-content: center;
   justify-content: center;
@@ -85,14 +86,13 @@ nav > ul {
 nav > ul > li{
   display: inline-flex;
   font-size: medium;
-  height: 3.5rem;
+  height: 2.5rem;
 }
 
 nav > ul > li > a {
   display: grid;
   align-content: center;
   padding: 0 1rem 0 1rem;
-  background-color: var(--theme_dark_2);
   color:white;
   font-size: larger;
 }
@@ -111,11 +111,7 @@ nav > ul > li > a:visited {
   text-decoration: none;
  }
 
-
-
-/***** FOOTER *****/
-
-
+/***** FOOTER CONTENT *****/
 
 footer {
   color: black;
@@ -143,9 +139,6 @@ footer > p {
 
 /* tablets */
 @media only screen and ( width < 768px) {
-  nav {
-    justify-content: center;
-  }
   .name_plate {
     padding-left: 0;
     justify-content: center;
@@ -166,3 +159,5 @@ footer > p {
   }
   */
 }
+
+
