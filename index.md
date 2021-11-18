@@ -14,12 +14,12 @@ author: Damien Apilando
   .project_card_image {
     align-self: center;
     justify-self: center;
-    min-height: 20em;
+    min-height: 100%;
     min-width: 100%;
   }
   .project_card_wrapper {
     max-width: 100%;
-    max-height: 30em;
+    max-height: 100%;
     padding: 1em;
     background-color: var(--theme_primary_color);
   }
@@ -27,6 +27,8 @@ author: Damien Apilando
   @media only screen and ( width < 1024px) {
     .project_card {
     grid-template-columns: 1fr;
+    grid-template-rows: 30em auto;
+    height: auto;
     }
   }
 </style>
