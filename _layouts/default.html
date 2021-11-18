@@ -13,26 +13,42 @@
   <body>
     <div class="wrapper">
       <header>
-
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
       
+        <div class="name_plate">
+          <div>
+            <h1>Damien Apilando</h1>
+            <h3>User Experience Designer</h3>
+          </div>
+        </div>
+      
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        
       </header>
+
+
       <section>
 
       {{ content }}
 
       </section>
+
+
       <footer>
+        <div class="footer_separator"> </div>
+
         {% if site.github.is_project_page %}
         <p>This page is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
+
         <p><small>Hosted on GitHub Pages</small></p>
       </footer>
+
+
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
   </body>
