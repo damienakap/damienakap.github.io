@@ -21,6 +21,7 @@ author: Damien Apilando
     max-width: 100%;
     max-height: 100%;
     padding: 1em;
+    color: white;
     background-color: var(--theme_dark_2);
   }
 
