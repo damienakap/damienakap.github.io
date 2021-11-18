@@ -21,6 +21,7 @@ body {
   display: grid;
   padding: 0px;
   margin: 0px;
+  width: 100%;
   background-color: var(--theme_background_color);
   grid-template-columns: repeat(12, 1fr);
   font-family: Arial, Helvetica, sans-serif;
@@ -29,8 +30,6 @@ body {
 
 .wrapper {
   display: grid;
-  padding-left: 1em;
-  padding-right: 1em;
   width: 100%;
   grid-column: 2 / span 10;
 }
@@ -42,9 +41,12 @@ section {
   justify-self:center;
 }
 
+.sticky_header {
+  margin-bottom: 2.5rem;
+}
 
 
-/***** NAME PLATE *****/
+/***** BANNER *****/
 
 .name_plate {
   padding-top: 1em;
@@ -68,8 +70,26 @@ section {
 
 /*****NAVIGATION BAR *****/
 
-nav {
+.navbar-wrapper{
+  display: grid;
+  width:100%;
+}
+
+.sticky_nav_wrapper {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  grid-template-columns: repeat(12,1fr);
+}
+
+.sticky_nav {
   grid-column: 2 / span 10;
+  height: 2.5rem;
+}
+
+nav {
   width: 100%;
   background-color: var(--theme_dark_1);
   display: grid;
@@ -86,7 +106,7 @@ nav > ul {
 nav > ul > li{
   display: inline-flex;
   font-size: medium;
-  height: 2.5rem;
+  height: 2.5em;
 }
 
 nav > ul > li > a {
@@ -95,6 +115,7 @@ nav > ul > li > a {
   padding: 0 1rem 0 1rem;
   color:white;
   font-size: larger;
+  transition: color 0.5s, background-color 0.5s;
 }
 
 nav > ul > li > a:hover  {
@@ -139,25 +160,12 @@ footer > p {
 
 /* tablets */
 @media only screen and ( width < 768px) {
-  .name_plate {
-    padding-left: 0;
-    justify-content: center;
-  }
-  .name_plate > div > h3 {
-    justify-content: center;
-  }
-  .name_plate > div > h1 {
-    justify-content: center;
-  }
+  
 }
 
 /* laptop & desktop */
 @media only screen and ( width < 1024px) {
-  /*
-  body {
-    background-color: var(--theme_background_color);
-  }
-  */
+  
 }
 
 
