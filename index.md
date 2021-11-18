@@ -35,7 +35,7 @@ author: Damien Apilando
 </style>
 
 <div class="project_card">
-  <img src="https://live.staticflickr.com/1456/26264880836_e5627524ab_b.jpg" class="project_card_image"></img>
+  <img src="https://live.staticflickr.com/1456/26264880836_e5627524ab_b.jpg" class="project_card_image"/>
   <div class="project_card_wrapper">
     <h2>Project 1</h2>
     <p>Here is where the description of a project would go. It should only be a short summary, with a link to a dedicated project page.</p>
