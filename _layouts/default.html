@@ -31,36 +31,7 @@
           </nav>
         </div>
       </header>
-
-
-      <script>
-        let navbar_home = document.getElementById("navbar_home");
-        let navbar_about = document.getElementById("navbar_about");
-        let navbar_contact = document.getElementById("navbar_contact");
-
-        let path = window.location.pathname;
-        let page = path.split("/").pop();
-        console.log( page );
-
-        if(page==""||page=="index.html") navbar_home.classList.add("navbar_current");
-        if(page=="about.html") navbar_about.classList.add("navbar_current");
-        if(page=="contact.html") navbar_contact.classList.add("navbar_current");
-  
-        function navigate( loc )
-        {
-          navbar_home.classList.remove("navbar_current");
-          navbar_about.classList.remove("navbar_current");
-          navbar_contact.classList.remove("navbar_current");
-          
-          if(loc==navbar_home) {navbar_home.classList.add("navbar_current");return;}
-          if(loc==navbar_about) {navbar_about.classList.add("navbar_current");return;}
-          if(loc==navbar_contact) {navbar_contact.classList.add("navbar_current");return;}
-  
-        }
-        
-      </script>
-
-
+      
       <section>
 
       {{ content }}

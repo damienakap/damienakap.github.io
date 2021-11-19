@@ -15,6 +15,7 @@
 
 * {
   box-sizing: border-box;
+  line-height: 2;
 }
 
 body {
@@ -56,6 +57,9 @@ section {
   min-height: 8rem;
   display: grid;
   justify-content: center;
+}
+.name_plate > div{
+  justify-content: inherit;
 }
 .name_plate > div > h3 {
   display:grid;
