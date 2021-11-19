@@ -5,12 +5,21 @@ author: Damien Apilando
 <style>
   .project_card {
     display: grid;
-    grid-template-columns: 60% auto;
-    background-color: var(--theme_dark_1);
-    margin-top: 1em;
-    height: 30em;
     overflow:hidden;
+    margin-top: 1em;
+    background-color: var(--theme_dark_1);
+    grid-template-columns: 1fr;
+    grid-template-rows: 30em auto;
+    height: auto;
   }
+
+  @media only screen and  (min-width: 768){
+    .project_card {
+      grid-template-columns: 60% auto;
+      height: 30em;
+    }
+  }
+  
   .project_card_image {
     align-self: center;
     justify-self: center;
@@ -32,13 +41,9 @@ author: Damien Apilando
     overflow: hidden;
   }
 
-  @media only screen and  (min-width: 768){
-    .project_card {
-    grid-template-columns: 1fr;
-    grid-template-rows: 30em auto;
-    height: auto;
-    }
-  }
+  
+
+
 </style>
 
 <div class="project_card">
