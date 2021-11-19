@@ -32,7 +32,8 @@ author: Damien Apilando
     overflow: hidden;
   }
 
-  @media only screen and ( width < 1024px) {
+  @media only screen and  (min-width < 1024px) ,
+		screen and (width < 1024px) {
     .project_card {
     grid-template-columns: 1fr;
     grid-template-rows: 30em auto;
