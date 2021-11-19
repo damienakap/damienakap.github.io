@@ -5,12 +5,14 @@ author: Damien Apilando
 <style>
   .about_card {
     display: grid;
-    grid-template-columns: 40% auto;
     background-color: var(--theme_dark_1);
     margin-top: 1em;
-    height: 30em;
     overflow:hidden;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30em auto;
+    height: auto;
   }
+  
   .about_card_image {
     align-self: center;
     justify-self: center;
@@ -23,14 +25,12 @@ author: Damien Apilando
     padding: 1em;
     background-color: var(--theme_dark_2);
     color:white;
-    line-height: 2;
   }
 
-  @media only screen and  (min-width < 1024px){
+  @media only screen and ( min-width: 1024px) {
     .about_card {
-    grid-template-columns: 1fr;
-    grid-template-rows: 30em auto;
-    height: auto;
+    grid-template-columns: 40% auto;
+    height: 30em;
     }
   }
 </style>

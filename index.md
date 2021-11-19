@@ -12,13 +12,6 @@ author: Damien Apilando
     grid-template-rows: 30em auto;
     height: auto;
   }
-
-  @media only screen and  (min-width: 768){
-    .project_card {
-      grid-template-columns: 60% auto;
-      height: 30em;
-    }
-  }
   
   .project_card_image {
     align-self: center;
@@ -39,6 +32,13 @@ author: Damien Apilando
     width: 100%;
     height: 100%;
     overflow: hidden;
+  }
+
+  @media only screen and  (min-width: 1024px){
+    .project_card {
+      grid-template-columns: 60% auto;
+      height: 30em;
+    }
   }
 
   
