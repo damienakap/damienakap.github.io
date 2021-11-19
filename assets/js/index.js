@@ -50,7 +50,7 @@ function main()
 	navbar = document.getElementById("navbar");
 
  	sticky = navbar.offsetTop;	// Get the offset position of the navbar
-
+  stickyNavbar()
 	window.onscroll = function() {stickyNavbar()};
 }
 

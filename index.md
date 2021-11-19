@@ -29,7 +29,6 @@ author: Damien Apilando
     display: grid;
     width: 100%;
     height: 100%;
-    background-color:blue;
     overflow: hidden;
   }
 
