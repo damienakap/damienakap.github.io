@@ -48,6 +48,7 @@ author: Damien Apilando
     }
     .about_card_image_wrapper{
       height: 25em;
+      overflow:hidden;
     }
   }
 </style>
