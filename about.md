@@ -20,6 +20,7 @@ author: Damien Apilando
     justify-self: center;
     width: 100%;
     height:auto;
+    overflow:hidden;
   }
   .about_card_image {
     align-self: center;
@@ -48,7 +49,6 @@ author: Damien Apilando
     }
     .about_card_image_wrapper{
       height: 25em;
-      overflow:hidden;
     }
   }
 </style>
