@@ -21,8 +21,16 @@ author: Damien Apilando
     max-width: 100%;
     max-height: 100%;
     padding: 1em;
-    color: white;
     background-color: var(--theme_dark_2);
+    color:white;
+  }
+
+  .project_card_link {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-color:blue;
+    overflow: hidden;
   }
 
   @media only screen and ( width < 1024px) {
@@ -35,7 +43,9 @@ author: Damien Apilando
 </style>
 
 <div class="project_card">
-  <img src="https://live.staticflickr.com/1456/26264880836_e5627524ab_b.jpg" class="project_card_image"/>
+  <a href="" class="project_card_link">
+    <img src="https://live.staticflickr.com/1456/26264880836_e5627524ab_b.jpg" class="project_card_image"/>
+  </a>
   <div class="project_card_wrapper">
     <h2>Project 1</h2>
     <p>Here is where the description of a project would go. It should only be a short summary, with a link to a dedicated project page.</p>
@@ -43,9 +53,11 @@ author: Damien Apilando
 </div>
 
 <div class="project_card">
-  <img src="https://live.staticflickr.com/1456/26264880836_e5627524ab_b.jpg" class="project_card_image"/>
+  <a href="" class="project_card_link">
+    <img src="https://live.staticflickr.com/1456/26264880836_e5627524ab_b.jpg" class="project_card_image"/>
+  </a>
   <div class="project_card_wrapper">
-    <h2>Project 2</h2>
+    <h2>Project 1</h2>
     <p>Here is where the description of a project would go. It should only be a short summary, with a link to a dedicated project page.</p>
   </div>
 </div>
