@@ -8,16 +8,23 @@ author: Damien Apilando
     background-color: var(--theme_dark_1);
     margin-top: 1em;
     overflow:hidden;
-    grid-template-columns: 1fr;
-    grid-template-rows: 30em auto;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
     height: auto;
+    width: 100%;
   }
   
+  .about_card_image_wrapper{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height:auto;
+  }
   .about_card_image {
     align-self: center;
     justify-self: center;
-    min-height: 100%;
-    min-width: 100%;
+    width: 100%;
   }
   .about_card_wrapper {
     max-width: 100%;
@@ -26,11 +33,21 @@ author: Damien Apilando
     background-color: var(--theme_dark_2);
     color:white;
   }
+  .about_card_wrapper > h2 {
+    line-height: 0;
+  }
 
-  @media only screen and ( min-width: 1024px) {
+  @media only screen and ( min-width: 768px) {
     .about_card {
-    grid-template-columns: 40% auto;
-    height: 30em;
+      grid-template-columns: 40% auto;
+    }
+    .about_card_image {
+      min-width: 100%;
+      width:auto;
+      min-height: 100%;
+    }
+    .about_card_image_wrapper{
+      height: 25em;
     }
   }
 </style>
