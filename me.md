@@ -13,16 +13,19 @@ title: About
     grid-template-rows: auto auto;
     height: auto;
     width: 100%;
+
+    transition: grid-template-columns 1s;
   }
   
   .about_card_image_wrapper{
     display: grid;
     align-self: center;
     justify-self: center;
-    width: 100%;
-    height:auto;
+    width: auto;
+    height:20em;
     overflow:hidden;
   }
+
   .about_card_image {
     align-self: center;
     justify-self: center;
@@ -39,19 +42,27 @@ title: About
     line-height: 0;
   }
 
+
   @media only screen and ( min-width: 768px) {
+    .about_card {
+      grid-template-columns: 50% auto;
+    }
+    .about_card_image {
+      width: auto;
+      height:100%;
+    }
+
+    .about_card_image_wrapper{
+      height: 30em;
+    }
+  }
+
+  @media only screen and ( min-width: 1024px) {
     .about_card {
       grid-template-columns: 40% auto;
     }
-    .about_card_image {
-      min-width: 100%;
-      width:auto;
-      min-height: 100%;
-    }
-    .about_card_image_wrapper{
-      height: 25em;
-    }
   }
+
 </style>
 
 <div class="about_card">

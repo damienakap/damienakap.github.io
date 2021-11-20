@@ -6,19 +6,31 @@ title: damienakap
 <style>
   .project_card {
     display: grid;
-    overflow:hidden;
-    margin-top: 1em;
     background-color: var(--theme_dark_1);
-    grid-template-columns: 1fr;
-    grid-template-rows: 30em auto;
+    margin-top: 1em;
+    overflow:hidden;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
     height: auto;
+    width: 100%;
+
+
   }
   
+  .project_card_link{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    width: auto;
+    height:20em;
+    overflow:hidden;
+
+    transition: height 1s;
+  }
   .project_card_image {
     align-self: center;
     justify-self: center;
-    min-height: 100%;
-    min-width: 100%;
+    height: 100%;
   }
   .project_card_wrapper {
     max-width: 100%;
@@ -27,24 +39,28 @@ title: damienakap
     background-color: var(--theme_dark_2);
     color:white;
   }
-
-  .project_card_link {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  .project_card_wrapper > h2 {
+    line-height: 0;
   }
 
-  @media only screen and  (min-width: 1024px){
+  @media only screen and ( min-width: 768px) {
     .project_card {
-      grid-template-columns: 60% auto;
-      height: 30em;
+      grid-template-columns: 50% auto;
+    }
+
+    .project_card_link{
+      height: 20em;
     }
   }
 
-  
-
-
+  @media only screen and ( min-width: 1024px) {
+    .project_card {
+      grid-template-columns: 60% auto;
+    }
+    .project_card_link{
+      height: 30em;
+    }
+  }
 </style>
 
 <div class="project_card">
