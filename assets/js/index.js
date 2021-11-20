@@ -38,11 +38,11 @@ function main()
 
 	path = window.location.pathname;
 	page = path.split("/").pop();
-	console.log( page );
+	console.log( path );
 
-	if(page=="index.html" || page=="") navbar_home.classList.add("navbar_current");
-	if(page=="about.html") navbar_about.classList.add("navbar_current");
-	if(page=="contact.html") navbar_contact.classList.add("navbar_current");
+	if(page=="index" || page=="") navbar_home.classList.add("navbar_current");
+	if(page=="me") navbar_about.classList.add("navbar_current");
+	if(page=="contact") navbar_contact.classList.add("navbar_current");
 
 
 	header = document.getElementById("header");
