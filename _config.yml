@@ -1,4 +1,11 @@
-theme: my-theme
+
+
+email: damienakap@gmail.com
 
 title: damienakap
 description: My Portfolio
+
+baseurl: ""
+url: "https://damienakap.github.io"
+#twitter_username: jekyllrb
+github_username:  damienakap

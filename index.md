@@ -1,6 +1,7 @@
 ---
 layout: default
 author: Damien Apilando
+title: damienakap
 ---
 <style>
   .project_card {

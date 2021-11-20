@@ -1,6 +1,7 @@
 ---
 layout: default
 author: Damien Apilando
+title: About
 ---
 <style>
   .about_card {
