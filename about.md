@@ -54,7 +54,9 @@ author: Damien Apilando
 </style>
 
 <div class="about_card">
-  <img src="https://live.staticflickr.com/1456/26264880836_e5627524ab_b.jpg" class="about_card_image"/>
+  <div class="about_card_image_wrapper">
+    <img src="https://live.staticflickr.com/1456/26264880836_e5627524ab_b.jpg" class="about_card_image"/>
+  </div>
   <div class="about_card_wrapper">
     <h2>Damien Apilando</h2>
     <p><small><em>User Experience Designer</em></small><br/><br/>
