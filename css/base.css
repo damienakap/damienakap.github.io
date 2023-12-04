@@ -1,0 +1,20 @@
+
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+    background-color: rgb(52, 60, 78);
+}
+
+body{
+    height: 100%;
+}
+
+#page_wrapper {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:clip;
+    z-index:-1; /* Remove this line if it's not going to be a background! */
+}

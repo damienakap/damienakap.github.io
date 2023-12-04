@@ -65,3 +65,33 @@ export function loadCssElement(parent, path, id)
         
     } );
 }
+
+/**
+ * 
+ * @param {HTMLElement} parent
+ * @param {String} type
+ * @param {String} path
+ * @param {String} id 
+ * @returns {Promise<HTMLElement>}
+ */
+export function loadJsElement(parent, type="text/javascript", path, id)
+{
+    return new Promise( (resolve, reject) => {
+        const jse = document.createElement("script");
+
+        jse.type = type;
+        jse.id = id;
+        jse.src = path;
+
+        jse.addEventListener("load", (e) => {
+            resolve(jse);
+        });
+
+        jse.addEventListener("error", (e) => {
+            jse.remove();
+            reject();
+        });
+
+        parent.appendChild(jse);
+    } );
+}
